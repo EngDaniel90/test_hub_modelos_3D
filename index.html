@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P84/P85 Digital Asset Hub</title>
+    <meta name="theme-color" content="#030712">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        dark: {
+                            900: '#030712', // Rich Black
+                            800: '#0f172a',
+                            700: '#1e293b',
+                        },
+                        neon: {
+                            blue: '#00f0ff',
+                            purple: '#7000ff',
+                            amber: '#fbbf24'
+                        }
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px)",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-900 text-slate-300 font-sans overflow-hidden h-screen flex relative selection:bg-neon-blue selection:text-black">
+
+    <div class="fixed inset-0 bg-grid-pattern bg-[size:40px_40px] pointer-events-none z-0 opacity-20"></div>
+    <div class="fixed top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-dark-900/50 to-dark-900 pointer-events-none z-0"></div>
+    <div class="fixed -top-[20%] -right-[10%] w-[600px] h-[600px] bg-blue-600/20 blur-[120px] rounded-full pointer-events-none z-0"></div>
+    <div class="fixed bottom-0 left-0 w-[500px] h-[500px] bg-indigo-600/10 blur-[100px] rounded-full pointer-events-none z-0"></div>
+
+    <div id="app-loader" class="fixed inset-0 z-[100] bg-dark-900 flex flex-col items-center justify-center transition-all duration-700">
+        <div class="relative w-24 h-24 mb-6">
+            <div class="absolute inset-0 border-t-2 border-neon-blue rounded-full animate-spin"></div>
+            <div class="absolute inset-2 border-r-2 border-indigo-500 rounded-full animate-spin reverse-spin"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <i class="fa-solid fa-cube text-white text-2xl animate-pulse"></i>
+            </div>
+        </div>
+        <div class="font-mono text-neon-blue text-xs tracking-[0.3em] uppercase animate-pulse">Initializing System</div>
+    </div>
+
+    <aside class="w-20 lg:w-64 bg-dark-800/50 backdrop-blur-xl border-r border-white/5 flex flex-col justify-between z-20 transition-all duration-300">
+        <div>
+            <div class="h-20 flex items-center justify-center lg:justify-start lg:px-6 border-b border-white/5">
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/20">
+                    <i class="fa-solid fa-layer-group text-white"></i>
+                </div>
+                <div class="hidden lg:block ml-3">
+                    <h1 class="font-display font-bold text-white leading-none text-lg">ASSET<span class="text-neon-blue">HUB</span></h1>
+                    <span class="text-[10px] font-mono text-slate-500">ENG. DIGITAL TWIN</span>
+                </div>
+            </div>
+
+            <nav class="mt-8 px-2 space-y-2">
+                <button onclick="switchTab('models')" id="nav-models" class="nav-item w-full flex items-center p-3 rounded-xl transition-all duration-300 group active-nav">
+                    <i class="fa-solid fa-cubes text-lg w-6 text-center transition-colors"></i>
+                    <span class="hidden lg:block ml-3 font-medium text-sm">3D Models</span>
+                    <div class="ml-auto opacity-0 group-[.active-nav]:opacity-100 hidden lg:block">
+                        <div class="w-1.5 h-1.5 rounded-full bg-neon-blue shadow-[0_0_10px_#00f0ff]"></div>
+                    </div>
+                </button>
+
+                <button onclick="switchTab('sites')" id="nav-sites" class="nav-item w-full flex items-center p-3 rounded-xl transition-all duration-300 group text-slate-500 hover:text-white hover:bg-white/5">
+                    <i class="fa-solid fa-earth-americas text-lg w-6 text-center transition-colors"></i>
+                    <span class="hidden lg:block ml-3 font-medium text-sm">Global Tracker</span>
+                </button>
+            </nav>
+        </div>
+
+        <div class="p-4 hidden lg:block">
+            <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-4 border border-white/5">
+                <div class="flex items-center gap-2 mb-2">
+                    <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                    <span class="text-[10px] font-mono text-slate-400 uppercase">System Online</span>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <span class="block text-[10px] text-slate-500 uppercase">Modules</span>
+                        <span class="text-xl font-mono font-bold text-white" id="total-modules-count">--</span>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] text-slate-500 uppercase text-right">Proj</span>
+                        <span class="text-xl font-mono font-bold text-white text-right">P84/85</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 text-center">
+                <p class="text-[10px] text-slate-600 font-mono">
+                    VER 2.4.0 // SECURE
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    <main class="flex-1 flex flex-col relative overflow-hidden z-10">
+        <header class="h-20 border-b border-white/5 bg-dark-900/30 backdrop-blur-md flex items-center justify-between px-6 lg:px-10">
+            <div>
+                <h2 class="text-2xl font-display font-bold text-white tracking-tight" id="page-title">Model Overview</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-[10px] font-mono text-neon-blue bg-neon-blue/10 px-2 py-0.5 rounded border border-neon-blue/20">LIVE DATA</span>
+                    <span class="text-[10px] font-mono text-slate-500" id="current-date"></span>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="hidden md:flex items-center bg-dark-800 border border-white/10 rounded-full px-4 py-2 w-64 focus-within:border-neon-blue/50 transition-colors">
+                    <i class="fa-solid fa-search text-slate-500 text-xs"></i>
+                    <input type="text" placeholder="Search module ID..." class="bg-transparent border-none outline-none text-xs text-white ml-2 w-full placeholder-slate-600 font-mono">
+                </div>
+                
+                <div class="w-8 h-8 rounded-full bg-slate-800 border border-white/10 flex items-center justify-center text-slate-400">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-brand-400 to-blue-600 p-[1px]">
+                    <div class="w-full h-full rounded-full bg-slate-900 flex items-center justify-center text-xs font-bold text-white">
+                        DA
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="flex-1 overflow-y-auto overflow-x-hidden custom-scrollbar p-6 lg:p-10 relative scroll-smooth" id="main-scroll">
+            
+            <div id="view-models" class="space-y-12 max-w-[1600px] mx-auto animate-enter">
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div class="stat-card">
+                        <span class="label">Topside Units</span>
+                        <span class="value" id="stat-topside">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="label">Hull Sections</span>
+                        <span class="value text-neon-amber" id="stat-hull">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="label">Locations</span>
+                        <span class="value" id="stat-locs">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="label">Total Assets</span>
+                        <span class="value text-neon-blue" id="stat-total">0</span>
+                    </div>
+                </div>
+
+                <section id="hull-section-wrapper" class="hidden">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+                        <h3 class="font-display text-xl text-white font-bold tracking-wide uppercase"><span class="text-neon-amber">HULL</span> SCOPE</h3>
+                        <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="hull-section">
+                        </div>
+                </section>
+
+                <section id="topside-section-wrapper" class="hidden">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+                        <h3 class="font-display text-xl text-white font-bold tracking-wide uppercase"><span class="text-neon-blue">TOPSIDE</span> MODULES</h3>
+                        <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5" id="topside-section">
+                        </div>
+                </section>
+            </div>
+
+            <div id="view-sites" class="hidden h-full flex flex-col lg:flex-row gap-6 animate-enter">
+                <div class="flex-1 glass-panel rounded-2xl overflow-hidden border border-white/10 relative shadow-2xl flex flex-col">
+                    <div class="absolute top-4 left-4 z-[400] flex flex-col gap-2">
+                        <button onclick="filterMap('ALL')" class="map-ctrl active" data-group="ALL">ALL</button>
+                        <button onclick="filterMap('TOPSIDE')" class="map-ctrl" data-group="TOPSIDE">TOPSIDE</button>
+                        <button onclick="filterMap('HULL')" class="map-ctrl" data-group="HULL">HULL</button>
+                    </div>
+
+                    <div id="map" class="w-full h-full bg-dark-900 z-0"></div>
+                </div>
+
+                <div class="w-full lg:w-[400px] flex flex-col gap-4">
+                    <div class="glass-panel p-6 rounded-2xl border border-white/10 h-full overflow-y-auto custom-scrollbar">
+                        <h3 class="font-display font-bold text-white mb-1">Site Inspector</h3>
+                        <p class="text-xs text-slate-500 font-mono mb-6 border-b border-white/5 pb-4">SELECT A MARKER FOR INTEL</p>
+                        
+                        <div id="site-info">
+                            <div class="h-64 flex flex-col items-center justify-center text-slate-600 opacity-50">
+                                <i class="fa-solid fa-crosshairs text-4xl mb-4 animate-spin-slow"></i>
+                                <span class="text-xs font-mono uppercase tracking-widest">Awaiting Selection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="mt-12 py-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] text-slate-500 font-mono uppercase tracking-wider">
+                <div>&copy; 2026 P84/P85 Digital Hub. All rights reserved.</div>
+                <div class="mt-2 md:mt-0">SRGE / ESUP / APS / ESC</div>
+            </footer>
+        </div>
+    </main>
+
+    <div id="modal" class="fixed inset-0 z-[200] hidden" role="dialog" aria-modal="true">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-md transition-opacity opacity-0" id="modal-backdrop"></div>
+        
+        <div class="absolute inset-0 overflow-y-auto">
+            <div class="flex min-h-full items-center justify-center p-4">
+                <div class="relative w-full max-w-5xl transform rounded-2xl bg-dark-800 border border-white/10 shadow-2xl transition-all opacity-0 scale-95 flex flex-col overflow-hidden" id="modal-panel">
+                    
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-neon-blue via-purple-500 to-neon-amber"></div>
+
+                    <div class="flex flex-col md:flex-row h-full md:h-[600px]">
+                        <div class="md:w-3/5 bg-black relative group overflow-hidden">
+                            <div id="modal-image-container" class="w-full h-full">
+                                </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent opacity-80"></div>
+                            
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <h2 id="modal-title" class="text-3xl font-display font-bold text-white mb-1"></h2>
+                                <p id="modal-subtitle" class="text-sm text-neon-blue font-mono"></p>
+                            </div>
+                        </div>
+
+                        <div class="md:w-2/5 p-8 flex flex-col bg-dark-800/90 backdrop-blur-xl">
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="text-xs font-mono text-slate-500 border border-white/10 px-2 py-1 rounded">SPECIFICATION SHEET</div>
+                                <button onclick="closeModal()" class="text-slate-400 hover:text-white transition-colors"><i class="fa-solid fa-xmark text-xl"></i></button>
+                            </div>
+
+                            <div id="modal-content" class="flex-grow space-y-6 overflow-y-auto custom-scrollbar pr-2">
+                                </div>
+
+                            <div id="modal-footer" class="mt-6 pt-6 border-t border-white/10 flex flex-col gap-3">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => navigator.serviceWorker.register('./service-worker.js'));
+        }
+    </script>
+</body>
+</html>

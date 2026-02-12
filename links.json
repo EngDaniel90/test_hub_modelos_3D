@@ -1,0 +1,549 @@
+[
+  {
+    "filename": "Flare.png",
+    "title": "Flare",
+    "description": "Flare Tower",
+    "projects": {
+      "P84": { "country": "Singapore", "city": "TUAS" },
+      "P85": { "country": "Singapore", "city": "TUAS" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3AXFYoMoz_R--c7v74gH9q6w&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/4bEYVGH"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M01.png",
+    "title": "M01",
+    "description": "Flare System",
+    "projects": {
+      "P84": { "country": "Brazil", "city": "Angra" },
+      "P85": { "country": "Brazil", "city": "Angra" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3A8JNisjyMS22mygUFXILzRg&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3KstenW"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M02.png",
+    "title": "M02",
+    "description": "CO2 Compression",
+    "projects": {
+      "P84": { "country": "Brazil", "city": "Angra" },
+      "P85": { "country": "Brazil", "city": "Angra" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3A7CVEpmv5RFuxWs-zC2z2yQ&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3R9YrjB"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M04.png",
+    "title": "M04",
+    "description": "CO2 Removal",
+    "projects": {
+      "P84": { "country": "Brazil", "city": "Aracruz" },
+      "P85": { "country": "Brazil", "city": "Aracruz" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3A83zhp8OyQ8uR1OV4BEyukQ&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3wWFJoF"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M05.png",
+    "title": "M05",
+    "description": "Main Compression",
+    "projects": {
+      "P84": { "country": "Indonesia", "city": "Batam" },
+      "P85": { "country": "Indonesia", "city": "Batam" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3AyJCTmCRdQS-Rl8NwrpPycQ&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/4bINspx"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M05B.png",
+    "title": "M05B",
+    "description": "URV System & Laydown",
+    "projects": {
+      "P84": { "country": "Brazil", "city": "Angra" },
+      "P85": { "country": "Brazil", "city": "Angra" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3AtYxZIWYtRh2xKN4fGfPK4A&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/4aJYhpZ"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M06.png",
+    "title": "M06",
+    "description": "GDU, Fuel Gas & HCD",
+    "projects": {
+      "P84": { "country": "Brazil", "city": "Aracruz" },
+      "P85": { "country": "Brazil", "city": "Aracruz" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3AKy_JknPpSwCWFdukhzaFqw&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3x2Aa85"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M07A.png",
+    "title": "M07A",
+    "description": "Injection and Export",
+    "projects": {
+      "P84": { "country": "Brazil", "city": "Angra" },
+      "P85": { "country": "Brazil", "city": "Angra" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3AqKP-_B3lROWxijfJ2ueU5w&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3KpiqqH"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M07B.png",
+    "title": "M07B",
+    "description": "Injection and Export",
+    "projects": {
+      "P84": { "country": "Brazil", "city": "Angra" },
+      "P85": { "country": "Brazil", "city": "Angra" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3AKo3MuPKgR1mC8Sgv4ZdHtg&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/4aKht70"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M09.png",
+    "title": "M09",
+    "description": "Manifolds & LR PIG",
+    "projects": {
+      "P84": { "country": "China", "city": "Nantong" },
+      "P85": { "country": "China", "city": "Nantong" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3A0mRugnnzRUu8TbsbPJXs6Q&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/4aKD4ft"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M10A.png",
+    "title": "M10A",
+    "description": "Oil Processing & Well Service",
+    "projects": {
+      "P84": { "country": "China", "city": "Nantong" },
+      "P85": { "country": "Brazil", "city": "Aracruz" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3AMCvFP2D3QayDUzSDWeamNQ&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3VmOy4m"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M10B.png",
+    "title": "M10B",
+    "description": "Produced Water System",
+    "projects": {
+      "P84": { "country": "China", "city": "Nantong" },
+      "P85": { "country": "Brazil", "city": "Aracruz" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3Al5H-4V05RkebNWEAt_Uu7g&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3VmPfL0"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M10C.png",
+    "title": "M10C",
+    "description": "Oil Processing & Well Service",
+    "projects": {
+      "P84": { "country": "Brazil", "city": "Aracruz" },
+      "P85": { "country": "Brazil", "city": "Aracruz" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3AaYj-HuqfS6e4laswmOMvcw&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3X7u40S"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M11.png",
+    "title": "M11",
+    "description": "Water Injection",
+    "projects": {
+      "P84": { "country": "China", "city": "Nantong" },
+      "P85": { "country": "Indonesia", "city": "Batam" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3A_1vTE6PcSIilGE9MPH0rsQ&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3Ks0Ulu"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M12.png",
+    "title": "M12",
+    "description": "Generation System",
+    "projects": {
+      "P84": { "country": "China", "city": "Nantong" },
+      "P85": { "country": "China", "city": "Nantong" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3AG0HbAt7QTmSZNxRaBw3gFQ&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3X7DKIK"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M13.png",
+    "title": "M13",
+    "description": "Generation System",
+    "projects": {
+      "P84": { "country": "China", "city": "Nantong" },
+      "P85": { "country": "China", "city": "Nantong" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3Avwjutn54RPShcZtYHXg9QA&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3VrguE8"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M13B.png",
+    "title": "M13B",
+    "description": "Generation System",
+    "projects": {
+      "P84": { "country": "China", "city": "Nantong" },
+      "P85": { "country": "China", "city": "Nantong" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3AUNCiBLobQLi89FjULf0wlw&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3yKXnfy"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M13Rooms.png",
+    "title": "M13Rooms",
+    "description": "Automation & Electrical",
+    "projects": {
+      "P84": { "country": "China", "city": "Nantong" },
+      "P85": { "country": "China", "city": "Nantong" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3AqM-vuwAhS1qSr4UaAW8QMQ&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3XajlTl"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M14.png",
+    "title": "M14",
+    "description": "Chemical Products",
+    "projects": {
+      "P84": { "country": "China", "city": "Nantong" },
+      "P85": { "country": "China", "city": "Nantong" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3Abf8qD00vS1qowA2RIzqMEg&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3XccRnb"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M15.png",
+    "title": "M15",
+    "description": "Utilities",
+    "projects": {
+      "P84": { "country": "China", "city": "Nantong" },
+      "P85": { "country": "China", "city": "Nantong" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3AqACTm42pQ9ukSHMlk5Cduw&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/4bFrrb5"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M15B.png",
+    "title": "M15B",
+    "description": "Utilities",
+    "projects": {
+      "P84": { "country": "China", "city": "Nantong" },
+      "P85": { "country": "China", "city": "Nantong" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3AosRL0bgKRmqMBhKIpByKfQ&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3VqsWUY"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M16.png",
+    "title": "M16",
+    "description": "Laydown",
+    "projects": {
+      "P84": { "country": "China", "city": "Nantong" },
+      "P85": { "country": "China", "city": "Nantong" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3ARL0PNsIUS6W4ARMjb5YYrA&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3KxYCkJ"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "M17.png",
+    "title": "M17",
+    "description": "Automation & Electrical",
+    "projects": {
+      "P84": { "country": "China", "city": "Haiyang" },
+      "P85": { "country": "China", "city": "Haiyang" }
+    },
+    "options": [
+      {
+        "label": "Construction Cloud",
+        "url": "https://acc.autodesk.com/docs/files/projects/e9464cb6-c1a1-4d61-8d0a-1cf4eba87524?folderUrn=urn%3Aadsk.wipprod%3Afs.folder%3Aco.zBfRvNUPTRW6DezjGSAm6w&entityId=urn%3Aadsk.wipprod%3Adm.lineage%3APMW-jCuUQ-Ol9hTLiibvUA&viewModel=detail&moduleId=folders"
+      },
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/4b1neNX"
+      }
+    ],
+    "disclaimer": "For Construction Cloud, a license is required.",
+    "group": "TOPSIDE"
+  },
+  {
+    "filename": "P84-LQ-ALL.png",
+    "title": "P84-LQ-ALL",
+    "description": "Living Quarters",
+    "projects": {
+      "P84": { "country": "China", "city": "Yantai" }
+    },
+    "options": [
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/4tMiExF"
+      }
+    ],
+    "disclaimer": "Hull scope visualization",
+    "group": "HULL"
+  },
+  {
+    "filename": "P84-AFT-ALL.png",
+    "title": "P84-AFT-ALL",
+    "description": "Hull - Aft Section",
+    "projects": {
+      "P84": { "country": "China", "city": "Yantai" }
+    },
+    "options": [
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/4bNJeQd"
+      }
+    ],
+    "disclaimer": "Hull scope visualization",
+    "group": "HULL"
+  },
+  {
+    "filename": "P84-MID-ALL.png",
+    "title": "P84-MID-ALL",
+    "description": "Hull - Midship Section",
+    "projects": {
+      "P84": { "country": "China", "city": "Yantai" }
+    },
+    "options": [
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/402dGip"
+      }
+    ],
+    "disclaimer": "Hull scope visualization",
+    "group": "HULL"
+  },
+  {
+    "filename": "P84-FWD-ALL.png",
+    "title": "P84-FWD-ALL",
+    "description": "Hull - Forward Section",
+    "projects": {
+      "P84": { "country": "China", "city": "Yantai" }
+    },
+    "options": [
+      {
+        "label": "Fusion 360",
+        "url": "https://a360.co/3Mp7ttB"
+      }
+    ],
+    "disclaimer": "Hull scope visualization",
+    "group": "HULL"
+  }
+]
